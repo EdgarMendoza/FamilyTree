@@ -25,6 +25,7 @@ namespace Family_Tree.Models
 
         public virtual ICollection<ImmediateFamily> Family { get; set; }
         public virtual Generation Generation { get; set; }
+        public virtual WholeFamily WholeFamily { get; set; }
     }
 
     enum Gender { Male, Female};

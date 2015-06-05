@@ -17,6 +17,7 @@ namespace Family_Tree.Data_Access_Layer
             Database.SetInitializer<FamilyContext>(new DropCreateDatabaseAlways<FamilyContext>());
         }
 
+        public DbSet<WholeFamily> AllFamily { get; set; }
         public DbSet<Person> People { get; set; }
         public DbSet<ImmediateFamily> Families { get; set; }
         public DbSet<Generation> Generations { get; set; }

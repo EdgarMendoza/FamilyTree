@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\FamilyContext.cs" />
+    <Compile Include="Data Access Layer\Models\WholeFamily.cs" />
     <Compile Include="Presentation Layer\MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>

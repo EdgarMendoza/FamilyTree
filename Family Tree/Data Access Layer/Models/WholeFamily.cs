@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Family_Tree.Models
 {
-    class Generation
+    class WholeFamily
     {
-        public Generation()
+        public WholeFamily()
         {
 
         }
 
-        public int GenerationID { get; set; }
+        public int WholeFamilyID { get; set; }
         public virtual ICollection<Person> Members { get; set; }
+        
     }
 }
