@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Data Access Layer\FamilyContext.cs" />
     <Compile Include="Data Access Layer\Models\WholeFamily.cs" />
+    <Compile Include="Data Logic Layer\PersonManagement.cs" />
+    <Compile Include="Data Logic Layer\TreeManagement.cs" />
     <Compile Include="Presentation Layer\MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +81,15 @@
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Family_Tree.Data_Access_Layer.FamilyContext.datasource" />
+    <None Include="Properties\DataSources\Family_Tree.Models.Generation.datasource" />
+    <None Include="Properties\DataSources\Family_Tree.Models.ImmediateFamily.datasource" />
+    <None Include="Properties\DataSources\Family_Tree.Models.Person.datasource" />
+    <None Include="Properties\DataSources\Family_Tree.Models.WholeFamily.datasource" />
+    <None Include="Properties\DataSources\Family_Tree.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Family_Tree.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\MainScreen.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
