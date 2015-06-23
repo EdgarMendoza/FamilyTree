@@ -4,9 +4,7 @@
 # User-specific files
 *.suo
 *.user
-*.sln
 *.sln.docstates
-*.csproj
 
 # Build results
 [Dd]ebug/
