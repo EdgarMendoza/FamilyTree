@@ -41,13 +41,13 @@ namespace Family_Tree.Presentation_Layer
                     newPerson.Gender = Gender.Female;
 
                 //Neeed to work on the following 2 instances of setting a datetime property from the datetimepicker control
-                newPerson.Birthdate = DateTime.Parse(bdPicker.Value.ToString("mm/dd/yyyy"));
+                newPerson.Birthdate = DateTime.Parse(bdPicker.Value.ToString());
                 newPerson.BirthPlace = bpTxtBox.Text;
 
                 if(deceasedCheckbox.Checked == true)
                 {
                     newPerson.Deceased = true;
-                    newPerson.DeathDate = DateTime.Parse(ddDatePicker.Value.ToString("mm/dd/yyyy"));
+                    newPerson.DeathDate = DateTime.Parse(ddDatePicker.Value.ToString());
                     newPerson.DeathPlace = dpTxtBox.Text;
                 }
             }

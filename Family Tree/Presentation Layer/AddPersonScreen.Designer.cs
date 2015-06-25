@@ -38,6 +38,7 @@
             this.bdPicker = new System.Windows.Forms.DateTimePicker();
             this.genderLabel = new System.Windows.Forms.Label();
             this.genderComboBox = new System.Windows.Forms.ComboBox();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bpLabel = new System.Windows.Forms.Label();
             this.bpTxtBox = new System.Windows.Forms.TextBox();
             this.deceasedCheckbox = new System.Windows.Forms.CheckBox();
@@ -47,7 +48,6 @@
             this.dpTxtBox = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,9 +96,11 @@
             // 
             // bdPicker
             // 
+            this.bdPicker.Checked = false;
             this.bdPicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.bdPicker.Location = new System.Drawing.Point(91, 94);
             this.bdPicker.Name = "bdPicker";
+            this.bdPicker.ShowCheckBox = true;
             this.bdPicker.Size = new System.Drawing.Size(146, 20);
             this.bdPicker.TabIndex = 4;
             // 
@@ -123,6 +125,10 @@
             this.genderComboBox.Size = new System.Drawing.Size(146, 21);
             this.genderComboBox.TabIndex = 3;
             this.genderComboBox.SelectedIndexChanged += new System.EventHandler(this.genderComboBox_SelectedIndexChanged);
+            // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(Family_Tree.Models.Person);
             // 
             // bpLabel
             // 
@@ -162,10 +168,12 @@
             // 
             // ddDatePicker
             // 
+            this.ddDatePicker.Checked = false;
             this.ddDatePicker.Enabled = false;
             this.ddDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ddDatePicker.Location = new System.Drawing.Point(91, 169);
             this.ddDatePicker.Name = "ddDatePicker";
+            this.ddDatePicker.ShowCheckBox = true;
             this.ddDatePicker.Size = new System.Drawing.Size(146, 20);
             this.ddDatePicker.TabIndex = 7;
             // 
@@ -205,10 +213,6 @@
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
-            // personBindingSource
-            // 
-            this.personBindingSource.DataSource = typeof(Family_Tree.Models.Person);
             // 
             // AddPersonScreen
             // 
