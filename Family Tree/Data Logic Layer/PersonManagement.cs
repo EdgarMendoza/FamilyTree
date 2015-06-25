@@ -8,22 +8,25 @@ using System.Threading.Tasks;
 
 namespace Family_Tree.Data_Logic_Layer
 {
-    public partial class MainScreen
+    class PersonManagement
     {
-        bool AddPerson (Person newPerson)
+        public PersonManagement()
         {
-            bool success = false;
+
+        }
+
+        public void AddPerson (Person newPerson)
+        {
+            //bool success = false;
 
             using(var db = new FamilyContext())
             {
                 db.People.Add(newPerson);
                 db.SaveChanges();
 
-                if (CheckPersonExist(newPerson.FirstName, newPerson.LastName, newPerson.Birthdate))
-                    success = true;
+                //if (CheckPersonExist(newPerson.FirstName, newPerson.LastName, newPerson.Birthdate))
+                //    success = true;
             }
-
-            return success;
         }
 
         bool CheckPersonExist(string firstName, string lastName, DateTime birthDate)

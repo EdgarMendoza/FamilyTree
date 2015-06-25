@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Family_Tree.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,12 @@ namespace Family_Tree
                 System.Windows.Forms.Application.Exit();
             else
                 System.Environment.Exit(1);
+        }
+
+        private void btn_AddPerson_Click(object sender, EventArgs e)
+        {
+            AddPersonScreen newPerson = new AddPersonScreen();
+            newPerson.ShowDialog();
         }
     }
 }
